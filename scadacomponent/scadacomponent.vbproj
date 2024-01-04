@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{1AC37B20-2F3E-42D5-AB75-5245F1BB90AE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>scadacomponent</RootNamespace>
+    <AssemblyName>scadacomponent</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>scadacomponent.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>scadacomponent.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>scadacomponent.loginformvb</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlarmControl.Designer.vb">
+      <DependentUpon>AlarmControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AlarmControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AuditTrail.Designer.vb">
+      <DependentUpon>AuditTrail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AuditTrail.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Bannercontrol.Designer.vb">
+      <DependentUpon>Bannercontrol.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bannercontrol.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="buttonproperty.Designer.vb">
+      <DependentUpon>buttonproperty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="buttonproperty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buttonrecordmsg.Designer.vb">
+      <DependentUpon>buttonrecordmsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="buttonrecordmsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changepassword.Designer.vb">
+      <DependentUpon>changepassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="changepassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class1.vb" />
+    <Compile Include="CustomDatagridView.Designer.vb">
+      <DependentUpon>CustomDatagridView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomDatagridView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="customformdata.Designer.vb">
+      <DependentUpon>customformdata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="customformdata.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomReceipe.Designer.vb">
+      <DependentUpon>CustomReceipe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomReceipe.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomTrackbar.Designer.vb">
+      <DependentUpon>CustomTrackbar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomTrackbar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DatetimeComponent.Designer.vb">
+      <DependentUpon>DatetimeComponent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DatetimeComponent.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="graph.Designer.vb">
+      <DependentUpon>graph.vb</DependentUpon>
+    </Compile>
+    <Compile Include="graph.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="gridcomponent.Designer.vb">
+      <DependentUpon>gridcomponent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="gridcomponent.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EnterReason.Designer.vb">
+      <DependentUpon>EnterReason.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EnterReason.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eventlists.vb" />
+    <Compile Include="filecomponent.Designer.vb">
+      <DependentUpon>filecomponent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="filecomponent.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="grid_for_graph.Designer.vb">
+      <DependentUpon>grid_for_graph.vb</DependentUpon>
+    </Compile>
+    <Compile Include="grid_for_graph.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="login.designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="loginformvb.Designer.vb">
+      <DependentUpon>loginformvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loginformvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Register.Designer.vb">
+      <DependentUpon>Login_Register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Register.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="multistate_lamp.Designer.vb">
+      <DependentUpon>multistate_lamp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="multistate_lamp.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="numericentry.Designer.vb">
+      <DependentUpon>numericentry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="numericentry.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Numeric_entry.Designer.vb">
+      <DependentUpon>Numeric_entry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Numeric_entry.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Numeric_Keyboard.Designer.vb">
+      <DependentUpon>Numeric_Keyboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Numeric_Keyboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="plcclass.vb" />
+    <Compile Include="popup.Designer.vb">
+      <DependentUpon>popup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="popup.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="processreport.Designer.vb">
+      <DependentUpon>processreport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="processreport.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="processreportdetails+audit+alarm.Designer.vb">
+      <DependentUpon>processreportdetails+audit+alarm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="processreportdetails+audit+alarm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="processreportdetails.Designer.vb">
+      <DependentUpon>processreportdetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="processreportdetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pushbutton.Designer.vb">
+      <DependentUpon>pushbutton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pushbutton.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RECIPE.Designer.vb">
+      <DependentUpon>RECIPE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RECIPE.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="regdetails.Designer.vb">
+      <DependentUpon>regdetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="regdetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.vb">
+      <DependentUpon>register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerdetails.Designer.vb">
+      <DependentUpon>registerdetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registerdetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportdata.Designer.vb">
+      <DependentUpon>reportdata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportdata.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="sqlclass.vb" />
+    <Compile Include="tank.Designer.vb">
+      <DependentUpon>tank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tank.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TextboxControl.designer.vb">
+      <DependentUpon>TextboxControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TextboxControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="variableclass.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AlarmControl.resx">
+      <DependentUpon>AlarmControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AuditTrail.resx">
+      <DependentUpon>AuditTrail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buttonproperty.resx">
+      <DependentUpon>buttonproperty.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buttonrecordmsg.resx">
+      <DependentUpon>buttonrecordmsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changepassword.resx">
+      <DependentUpon>changepassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gridcomponent.resx">
+      <DependentUpon>gridcomponent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterReason.resx">
+      <DependentUpon>EnterReason.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginformvb.resx">
+      <DependentUpon>loginformvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Register.resx">
+      <DependentUpon>Login_Register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="multistate_lamp.resx">
+      <DependentUpon>multistate_lamp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="numericentry.resx">
+      <DependentUpon>numericentry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Numeric_entry.resx">
+      <DependentUpon>Numeric_entry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Numeric_Keyboard.resx">
+      <DependentUpon>Numeric_Keyboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="processreport.resx">
+      <DependentUpon>processreport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="processreportdetails+audit+alarm.resx">
+      <DependentUpon>processreportdetails+audit+alarm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="processreportdetails.resx">
+      <DependentUpon>processreportdetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pushbutton.resx">
+      <DependentUpon>pushbutton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RECIPE.resx">
+      <DependentUpon>RECIPE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regdetails.resx">
+      <DependentUpon>regdetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerdetails.resx">
+      <DependentUpon>registerdetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tank.resx">
+      <DependentUpon>tank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextboxControl.resx">
+      <DependentUpon>TextboxControl.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\acknowledged.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green-tick-9544.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupinvsmal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notAcknowledged.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page setup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ActUtlTypeLib">
+      <Guid>{D217E54E-4A26-4A76-B0AB-57166B90F9AF}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxActUtlTypeLib">
+      <Guid>{D217E54E-4A26-4A76-B0AB-57166B90F9AF}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
